@@ -39,9 +39,9 @@
   const output = document.querySelector('#output');
 
 if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-  output.innerHTML = "あなたは既にダークモードを使用しています";
+document.write("<p>ダークモードはオンになっています</p>");
 } else {
-    output.innerHTML = "コントロールセンターからダークモードに変更してみてください";
+document.write("<p>ダークモードはオフになっています<br>コントロールセンターから<br class="br-sp">ダークモードをオンにしてください</p>");
 }
   </script>
 <p id="output"></p>
